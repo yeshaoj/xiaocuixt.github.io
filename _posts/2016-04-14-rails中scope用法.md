@@ -13,6 +13,7 @@ class Post < ActiveRecord::Base
   scope :is_active, {where(status: 'active')}
   scope :has_content, {joins(:comment).where("comments.content is not null")}
 end
+{% endhighlight %}
 
 传参数的scope
 

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "rails中scope的用法"
+title:  "rails中ActiveConcern的用法"
 date:   2016-04-14 18:30:00
 categories: rails
 comments: true
