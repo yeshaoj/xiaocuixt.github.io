@@ -1,16 +1,16 @@
 ---
 layout: post
 title:  "rails中创建rake任务"
-date:   2016-04-19 12:30:00
+date:   2016-04-18 16:30:00
 categories: rails
 comments: true
 ---
 
-在rails中，rake用来编写任务脚本，让我们在cli中可以执行，提供了良好的任务编写结构，并且方便执行相互依赖的任务。
+在rails中，rake用来编写任务脚本，让我们在cli中可以执行，提供了良好的任务编写结构，并且方便执行相互依赖的任务
 
 rails项目中，rake文件存放位置：lib/tasks/user.rake
 
-1. without namespace:
+1.without namespace:
 
 {% highlight ruby %}
 task :sayhi do
@@ -20,7 +20,7 @@ end
 
 执行  rake sayhi  即可
 
-2. with namespace
+2.with namespace
 
 {% highlight ruby %}
 namespace :user do
@@ -58,7 +58,7 @@ end
 
 执行  rake say:hi   将打印出 "hello xiaocui" 和 "hi xiaocui"
 
-4. 单次执行多个方法
+4.单次执行多个方法
 
 {% highlight ruby %}
 #lib/myweekend.rake
@@ -86,7 +86,7 @@ have supper
 This is my whole day on my weekend
 {% endhighlight %}
 
-5. rake支持默认的任务
+5.rake支持默认的任务
 
 {% highlight ruby %}
 task :default => 'say:hello'
