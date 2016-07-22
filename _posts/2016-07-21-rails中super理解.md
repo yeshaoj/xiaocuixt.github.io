@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "rails中super理解"
-date:   2016-07-21 15:30:00
+date:   2016-07-21 12:30:00
 categories: rails
 comments: true
 ---
